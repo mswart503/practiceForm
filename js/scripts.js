@@ -13,4 +13,15 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#addressBook form").submit(function(event) {
+    var contactNameInput = $("input#contactName").val();
+    var contactAddressInput = $("input#contactAddress").val();
+    var contactNumberInput = $("input#contactNumber").val();
+
+    $("button#addContact").click(function(){
+      $("#accordion").append("");
+    });
+
+  });
 });

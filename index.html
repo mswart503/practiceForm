@@ -55,11 +55,43 @@
       <p>Hello <span class="name"></span>! We will mail your receipt to <span class="address"></span> in the next few days.</p>
       <p>Your shipping cost is $<span class="shipping"></span></p>
     </div>
+    <h1>Address Book</h1>
+    <div class="addressBook">
+      <form>
+        <div class="form-group">
+          <label for="contactName">Contact Name</label>
+          <input id="contactName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="contactAddress">Contact Address</label>
+          <input id="contactAddress" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="contactNumber">Contact Number</label>
+          <input id="contactNumber" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn" id="addContact">Add Contact</button>
+        </form>
 
+        <div id="accordion">
+          <div class="card">
+          <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span class="contactName1"></span>
+                </button>
+              </h5>
+            </div>
 
-
-
-
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <span class="contactAddress1"></span>
+                <span class="contactNumber1"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
