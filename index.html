@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>PDX Plants</title>
+  </head>
+  <body class="backgroundColor">
+    <div class="container">
+      <h1>Pick Your Plant!</h1>
+      <div class="radio">
+        <label>
+          <input type="radio" name="plant" value="Monstera" checked>
+          Monstera
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="plant" value="Prayer Plant">
+          Prayer Plant
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="plant" value="Spider Plant">
+          Spider Plant
+        </label>
+      </div>
+    <h1>How fast do you want it?</h1>
+    <select class="form-control" id="shipping">
+      <option value="30">Overnight - $30</option>
+      <option value="15">Two Day   - $15</option>
+      <option value="3">Standard  -  $3</option>
+    </select>
+
+      <h1>Please fill out the form below to get your receipt:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Your Address</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn">Get my receipt</button>
+        </form>
+      </div>
+    <div id="receipt">
+      <h1>Here is your receipt</h1>
+      <p>Thank you for ordering your <span class="plant"></span></p>
+      <p>Hello <span class="name"></span>! We will mail your receipt to <span class="address"></span> in the next few days.</p>
+      <p>Your shipping cost is $<span class="shipping"></span></p>
+    </div>
+
+
+
+
+
+    </div>
+  </body>
+</html>
